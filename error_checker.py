@@ -1,4 +1,6 @@
-'''To print out a list of all variables operating at a particular point in your code, insert all the functions below at the top of your code and type 'make_table(dir())' at the point where you want to see a table.
+'''To print out a list of all variables operating at a particular point in your code, copy this file into the same directory as the script you want to debug or observe.  At the top of the script type "from error_checker.py import *".  Type "make_table(dir())" at the point in your  script where you want to observe active variables.  
+
+    Magic variables will no be shown, but functions will be part of the table.
 
 '''
 
@@ -39,4 +41,4 @@ def print_table(vars):
     col_titles = ["name space", "type", "value"]
     print "\t".join(col_titles)
     for i in col_values:
-        print i + '\t' + str(col_values[i]["type"]) + '\t' + str(col_values[i]['value'])
+        print "{0}\t{1}\t{2}".format(i, str(col_values[i]["type"]),str(col_values[i]["value"]))
