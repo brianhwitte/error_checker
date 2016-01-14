@@ -1,4 +1,4 @@
-'''To print out a list of all variables operating at a particular point in your code, copy this file into the same directory as the script you want to debug or observe.  At the top of the script type "from error_checker.py import *".  Type "make_table(dir())" at the point in your  script where you want to observe active variables.  
+'''To print out a list of all variables operating at a particular point in your code, copy these functions into the top of your script.  Type "print_table(dir())" at the point in your  script where you want to observe active variables.  
 
     Magic variables will no be shown, but functions will be part of the table.
 
